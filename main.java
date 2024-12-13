@@ -1,21 +1,13 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
-class Array_sort {
+class hashmap {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        ArrayList<Integer> multi = new ArrayList<Integer>();
+        HashMap<String, Integer> examScores = new HashMap<String, Integer>();
 
-        numbers.add(50);
-        numbers.add(12);
-        numbers.add(9);
-        numbers.add(144);
-        numbers.add(44);
+        examScores.put("Math", 84);
+        examScores.put("Comp", 90);
+        examScores.put("Eng", 92);
 
-        numbers.forEach(number -> {
-            multi.add(number * 2);
-            System.out.println(multi.toString());
-        });
-
-        System.out.println(numbers.toString());
+        System.out.println(examScores.toString());
     }
 }
